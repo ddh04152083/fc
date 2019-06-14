@@ -1,0 +1,2 @@
+/* 让第一个框显示出来 */
+.jumbotron:first-Child{display:block;} 

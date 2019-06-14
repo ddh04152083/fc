@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="./css/img.css">
+    <link rel="stylesheet" href="./css/background.css">
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/user/main.js"></script>
+    <script src="js/bootstrap-paginator.js"></script>
+
+    <title>用户主页</title>
+</head>
+<body>
+<ul id="myTab" class="nav nav-tabs" style="align-items: center;">
+
+    <li class="col-md-2  " >  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">CM</button></li>
+    <li class="col-md-2  " >  <button type="button" class="btn btn-success"data-toggle="modal" data-target="#myModal2">ROC</button></li>
+    <li class="col-md-2 active" ><a href="#user" id="history" onclick="listAll(1)"   rel="external nofollow" data-toggle="tab"><p style="text-align: center">显示数据</p></a></li>
+</ul>
+<div class="tab-pane fade in active" id="user">
+    <table id="table" class="table text-nowrap table-striped table-striped  text-info table-responsive text-success">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>user_id</th>
+            <th>product_id</th>
+            <th>user_review_count</th>
+            <th>rating</th>
+            <th>year</th>
+            <th>month</th>
+            <th>day</th>
+            <th>label</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td >${i+1}</td>
+            <td >${res[i].user_id}</td>
+            <td >${res[i].product_id}</td>
+            <td>${res[i].user_review_count}</td>
+            <td>${res[i].rating}</td>
+            <td >${res[i].year}</td>
+            <td >${res[i].month}</td>
+            <td >${res[i].day}</td>
+            <td >${res[i].label}</td>
+        </tr>
+        </tbody>
+    </table>
+    <div id="example" style="text-align: center"> <ul id="pageLimit"></ul> </div>
+
+</div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" >CM</h4>
+            </div>
+            <div><img id="cm" style="width: 600px;height: 440px;" src="http://localhost/img/CM.png"/></div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" >ROC</h4>
+            </div>
+            <div><img id="roc" style="width: 600px;height: 440px;" src="http://localhost/img/ROC.png"/></div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="js/user/logout.js"></script>
+<script src="js/user/safe.js"></script>
+<script src="js/user/back.js"></script>
+<script src="js/user/user.js"></script>
+
+</html>

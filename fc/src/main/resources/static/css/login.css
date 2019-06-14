@@ -1,0 +1,160 @@
+h1{
+    margin: 0;
+    padding: 0;
+}
+body{
+     width:100%;
+    height:100%;
+    background: url("../images/back.jpg") no-repeat;
+    overflow: hidden;
+    background-size:cover;
+}
+
+.bottom .list{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    color:#d3354c!important;
+}
+.bottom .middle{
+    width: 100%;
+    position: absolute;
+    top: 120px;
+}
+.middle{
+    width:1600px!important;
+    height: 800px;
+}
+.article{
+    float: left;
+    position: absolute;
+    top: 0;
+    width: 1100px;
+    height: 800px;
+}
+.aside{
+    margin-left: 40%;
+    width: 300px;
+    height: 200px;
+	margin-top: 30px;
+}
+.denglu{
+    margin-top: 10px;
+    border:1px solid yellow;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+  
+.logo {
+    width: 104px;
+    height: 120px;
+    margin: 10px auto 10px;
+    background: url('../images/log.png') 0 0 no-repeat;
+}
+.form-item placeholder {
+    color: rgb(255,157,0)!important;
+}
+.form-item input {
+    width: 230px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 70px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    color:  rgb(255,157,0);
+    background-color: transparent;
+    outline: none;
+}
+.reg-bar {
+    width: 360px;
+    margin: 20px auto 0;
+    font-size: 14px;
+    overflow: hidden;
+}
+.reg-bar .reg {
+    float: left;
+}
+
+.reg-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+.aside a {
+    color: #fff;
+    text-decoration: none;
+}
+.form-item button {
+    width: 230px;
+    height: 40px;
+    border: 0;
+    margin-top: 10px;
+	 margin-left: 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #1f6f4a;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+.form-item select {
+	width: 302px;
+    height: 44px;
+    margin-top: 10px;
+    padding-left: 100px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 18px;
+    color:  rgb(255,157,0);
+    background-color: transparent;
+    outline: none;
+}
+#password , .pwd{
+    background: url("../images/pwd.png") 20px 6px no-repeat;
+}
+#username,.username{
+    background: url("../images/email.png") 20px 6px no-repeat;
+}
+
+#UserIofo label{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+}
+#UserIofo label span{
+    float: left;
+    text-align: right;
+    width: 130px;
+    height: 30px;
+}
+.table{
+    color: aliceblue;
+}
+#classMate{
+    height: 600px;
+    width: 100%;
+    overflow-y:scroll;
+}
+.footer{
+    margin-top: 10px;
+    background: white;
+    height: 70px;
+}
+.focus{
+    
+    background: rgb(233, 185, 30);
+}
+.danger{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: rgb(245, 75, 8);
+}
